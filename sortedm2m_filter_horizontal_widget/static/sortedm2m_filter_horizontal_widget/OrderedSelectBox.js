@@ -122,15 +122,15 @@ var OrderedSelectBox = {
         } );
     },
     orderUp: function(id) {
-      $('#' + id).find('option:selected').each(function(){
-          $(this).insertBefore($(this).prev());
+      jQuery('#' + id).find('option:selected').each(function(){
+          jQuery(this).insertBefore(jQuery(this).prev());
       });
 
     },
     orderDown: function(id) {
 
-      $('#' + id).find('option:selected').each(function(){
-       $(this).insertAfter($(this).next());
+      jQuery('#' + id).find('option:selected').each(function(){
+       jQuery(this).insertAfter(jQuery(this).next());
       });
 
     },
