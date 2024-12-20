@@ -1,4 +1,3 @@
-$(document).ready(function () {
     var OrderedSelectBox = {
         cache: new Object(),
         init: function(id) {
@@ -175,4 +174,3 @@ $(document).ready(function () {
             win.close();
         };
     }
-});

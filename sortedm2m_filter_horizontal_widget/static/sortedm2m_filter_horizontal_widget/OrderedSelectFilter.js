@@ -14,7 +14,6 @@ function findForm(node) {
     return node;
 }
 
-$(document).ready(function () {
     var OrderedSelectFilter = {
         init: function(field_id, field_name, is_stacked) {
             if (field_id.match(/__prefix__/)){
@@ -240,4 +239,3 @@ $(document).ready(function () {
             return true;
         }
     };
-});
