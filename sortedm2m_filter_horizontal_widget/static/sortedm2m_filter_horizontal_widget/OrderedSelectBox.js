@@ -122,15 +122,15 @@ var OrderedSelectBox = {
         } );
     },
     orderUp: function(id) {
-      jQuery('#' + id).find('option:selected').each(function(){
-          jQuery(this).insertBefore(jQuery(this).prev());
+      django.jQuery('#' + id).find('option:selected').each(function(){
+          django.jQuery(this).insertBefore(django.jQuery(this).prev());
       });
 
     },
     orderDown: function(id) {
 
-      jQuery('#' + id).find('option:selected').each(function(){
-       jQuery(this).insertAfter(jQuery(this).next());
+      django.jQuery('#' + id).find('option:selected').each(function(){
+       django.jQuery(this).insertAfter(django.jQuery(this).next());
       });
 
     },
