@@ -43,6 +43,9 @@ class SortedMultipleChoiceField(forms.ModelMultipleChoiceField):
 class SortedFilteredSelectMultiple(forms.SelectMultiple):
     """
     A SortableSelectMultiple with a JavaScript filter interface.
+
+        Requires jQuery to be loaded.
+
     Note that the resulting JavaScript assumes that the jsi18n
     catalog has been loaded in the page
     """
@@ -59,6 +62,7 @@ class SortedFilteredSelectMultiple(forms.SelectMultiple):
         js = (
             STATIC_URL + "sortedm2m_filter_horizontal_widget/OrderedSelectBox.js",
             STATIC_URL + "sortedm2m_filter_horizontal_widget/OrderedSelectFilter.js",
+            STATIC_URL + "sortedm2m_filter_horizontal_widget/jquery.min.js",
         )
 
     def build_attrs(self, attrs=None, extra_attrs=None, **kwargs):
